@@ -1,0 +1,157 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+}
+h1 {
+  color: hsl(330, 71%, 56%);
+  padding-left: 200px;
+  background-color: #b962164d;
+}
+.t {
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  margin-top: 50px;
+  column-gap: 150px;
+}
+.t1 {
+  width: 230px;
+  height: 50px;
+  border: 2px solid black;
+}
+.t2 {
+  width: 230px;
+  height: 50px;
+  border: 2px solid black;
+}
+.t3 {
+  grid-row: 2;
+  width: 100px;
+  margin-top: 100px;
+  margin-left: 450px;
+  border-radius: 50%;
+  height: 30px;
+  background-color: pink;
+}
+.t3:hover {
+  background-color: rgb(204, 61, 97);
+}
+
+.t1:hover,
+.t2:hover {
+  border: 2px solid rgb(27, 48, 236);
+}
+body {
+  background-image: url("https://64.media.tumblr.com/67140757fef063a8debcc99e94e23d60/tumblr_nv26lkZtjF1u60tx6o1_1280.jpg");
+  margin-top: 50px;
+  background-size: cover;
+}
+.ac-footer .ac-icon {
+  position: absolute;
+  left: 0;
+  right: -5px;
+  width: 150px;
+  height: 200px;
+  margin: auto;
+}
+.ac-footer .ac-icon-love-dark {
+  background: url("https://community.algolia.com/places/images/svg/icon-heart-dark-66670e8e.svg")
+    no-repeat center center/contain;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 red;
+  }
+  70% {
+    box-shadow: 0 0 0 30px red;
+  }
+  100% {
+    box-shadow: 0 0 0 0 pink;
+  }
+}
+@keyframes pulseHeart {
+  0% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ac-icon-love-dark {
+  display: block;
+  position: relative;
+}
+.ac-icon-love-dark:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  z-index: -1;
+  border-radius: 100%;
+}
+.ac-footer-container:hover .ac-icon-love-dark {
+  animation: pulseHeart 1s ease infinite;
+}
+.ac-footer-container:hover .ac-icon-love-dark:before {
+  animation: pulse 1s ease infinite !important;
+}
+.ac-icon-triangle {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.ac-footer .ac-footer-brand:hover .ac-icon-love-dark {
+  background: url("https://community.algolia.com/places/images/svg/icon-heart-light-fc92b1e0.svg")
+    no-repeat center center/contain;
+}
+
+body {
+  font-family: arial;
+  font-size: 30px;
+}
+.t4 {
+  margin-left: 50%;
+  position: relative;
+}
+.t6 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 48%;
+  bottom: 280px;
+  background-color: red;
+  border-radius: 30%;
+}
+/* footer {
+  margin-top: 5%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  bottom: 550px;
+} */
+#footer {
+  position: absolute;
+  bottom: 0;
+  color: aliceblue;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+}
+a {
+  color: aliceblue;
+}
